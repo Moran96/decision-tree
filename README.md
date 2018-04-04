@@ -12,6 +12,6 @@ Thanks for the author.
 ## 5. 建立分类器,绘图
 ## 6. 测试
 ## Appendix A.
-[]()
+[trees.py](https://github.com/Moran96/Decision-Tree/blob/master/trees.py)
 ## Appendix B.
 ## References
