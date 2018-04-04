@@ -29,7 +29,8 @@ row= 1 value= 1 	 new_entropy= 1.2000000000000002 	 info_gain= 0.170950594454668
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=l(x)=-log_2&space;p(x_i)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?l(x)=-log_2&space;p(x_i)" title="l(x)=-log_2 p(x_i)" /></a>
 
-$$H(dataSet)=\sum_{i=1}^n l(x_i)p(x_i)=-\sum_{i=1}^n p(x_i) log_2 p(x_i)$$
+<a href="https://www.codecogs.com/eqnedit.php?latex=H(dataSet)=\sum_{i=1}^n&space;l(x_i)p(x_i)=-\sum_{i=1}^n&space;p(x_i)&space;log_2&space;p(x_i)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?H(dataSet)=\sum_{i=1}^n&space;l(x_i)p(x_i)=-\sum_{i=1}^n&space;p(x_i)&space;log_2&space;p(x_i)" title="H(dataSet)=\sum_{i=1}^n l(x_i)p(x_i)=-\sum_{i=1}^n p(x_i) log_2 p(x_i)" /></a>
+
 依据dataSet内某一给定特征的某一value划分数据集,得到对应新数据集newSet.
 
 $$h(newSet)=p(newSet)H(newSet)$$
