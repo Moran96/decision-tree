@@ -7,7 +7,9 @@ Thanks for the author.
 
 ## 2. Concept
 [Information Gain](https://github.com/Moran96/Decision-Tree/blob/master/Information%20Gain.md)
+
 [splitDataSet.py](https://github.com/Moran96/Decision-Tree/blob/master/splitDataSet.md)
+
 ## 3. construct
 [Construct a decision tree](quiver-file-url/3C26FB630D727870D1C7ED6FF147E327.md)
 ## 4. 度量算法成功率
