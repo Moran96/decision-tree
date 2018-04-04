@@ -1,3 +1,5 @@
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+
 前期思考(待修正):
 * 对于一个无序数据集,每个样本都有若干特征.选择哪一个特征来进行分类才能得到最优结果?
 * "最优"是一个抽象的概念,那么机器学习中的最优应该通过什么形式表现出来?即能替代最优的参数是什么?
