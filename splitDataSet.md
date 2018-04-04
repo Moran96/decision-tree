@@ -33,8 +33,8 @@ row= 1 value= 1 	 new_entropy= 1.2000000000000002 	 info_gain= 0.170950594454668
 
 依据dataSet内某一给定特征的某一value划分数据集,得到对应新数据集newSet.
 
-$$h(newSet)=p(newSet)H(newSet)$$
+<a href="https://www.codecogs.com/eqnedit.php?latex=h(newSet)=p(newSet)H(newSet)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?h(newSet)=p(newSet)H(newSet)" title="h(newSet)=p(newSet)H(newSet)" /></a>
 
-$$Information Gain = H(dataSet) - h(newSet) $$
+<a href="https://www.codecogs.com/eqnedit.php?latex=Information&space;Gain&space;=&space;H(dataSet)&space;-&space;h(newSet)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Information&space;Gain&space;=&space;H(dataSet)&space;-&space;h(newSet)" title="Information Gain = H(dataSet) - h(newSet)" /></a>
 
 ---
