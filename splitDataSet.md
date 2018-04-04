@@ -1,5 +1,3 @@
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
-
 前期思考(待修正):
 * 对于一个无序数据集,每个样本都有若干特征.选择哪一个特征来进行分类才能得到最优结果?
 * "最优"是一个抽象的概念,那么机器学习中的最优应该通过什么形式表现出来?即能替代最优的参数是什么?
@@ -29,6 +27,7 @@ row= 1 value= 1 	 new_entropy= 1.2000000000000002 	 info_gain= 0.170950594454668
 ---
 对于一个包含n个训练样本,i种ground_truth的数据集:
 
+<img src="http://www.forkosh.com/mathtex.cgi? \Large l(x)=-log_2 p(x_i)">
 $$l(x)=-log_2 p(x_i)$$
 
 $$H(dataSet)=\sum_{i=1}^n l(x_i)p(x_i)=-\sum_{i=1}^n p(x_i) log_2 p(x_i)$$
