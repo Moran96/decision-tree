@@ -1,4 +1,5 @@
 from math import log
+import operator
 
 #Calculate the shannon entropy.
 def calculate_shannon_entropy(data_set):
@@ -61,3 +62,34 @@ def choose_best_split(dataset):
 				best_info_gain = info_gain
 				best_feature = i
 	return best_feature
+
+def majority_cnt(class_list):
+	class_count = {}
+	for vote in class_list:
+		if vote not in class_count.keys(): class_count[vote] = 0
+		class_count[vote] += 1
+	sorted_class_count = sorted(class_count.iteritems(),
+		key = operator.itemgetter(1),reverse=True)
+	return sorted_class_count[0][0]
+
+#Create tree
+def create_tree(dataset,labels):
+	class_list = [example[-1] for example in dataset]
+	if class_list.count(class_list[0]) == len(class_list):
+		return class_list[0]
+	if len(dataset[0]) == 1:
+		return majority_cnt(class_list)
+	best_feature = choose_best_split(dataset)
+	best_feature_label = labels[best_feature]
+
+	my_tree = {best_feature_label:{}}
+	del(labels[best_feature])
+	feat_values = [example[best_feature] for example in dataset]
+	unique_vals = set(feat_values)
+	for value in unique_vals:
+		sub_labels = labels[:]
+		my_tree[best_feature_label][value] = create_tree(split_data_set\
+			(dataset,best_feature,value),sub_labels)
+	return my_tree
+
+#-------
