@@ -26,14 +26,15 @@ row= 1 value= 1 	 new_entropy= 1.2000000000000002 	 info_gain= 0.170950594454668
 ```
 ---
 对于一个包含n个训练样本,i种ground_truth的数据集:
-new_entropy += prob * calculate_shannon_entropy(sub_data_set)
-$$l(x)=-log_2 p(x_i)$$
 
-$$H(dataSet)=\sum_{i=1}^n l(x_i)p(x_i)=-\sum_{i=1}^n p(x_i) log_2 p(x_i)$$
+<a href="https://www.codecogs.com/eqnedit.php?latex=l(x)=-log_2&space;p(x_i)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?l(x)=-log_2&space;p(x_i)" title="l(x)=-log_2 p(x_i)" /></a>
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=H(dataSet)=\sum_{i=1}^n&space;l(x_i)p(x_i)=-\sum_{i=1}^n&space;p(x_i)&space;log_2&space;p(x_i)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?H(dataSet)=\sum_{i=1}^n&space;l(x_i)p(x_i)=-\sum_{i=1}^n&space;p(x_i)&space;log_2&space;p(x_i)" title="H(dataSet)=\sum_{i=1}^n l(x_i)p(x_i)=-\sum_{i=1}^n p(x_i) log_2 p(x_i)" /></a>
+
 依据dataSet内某一给定特征的某一value划分数据集,得到对应新数据集newSet.
 
-$$h(newSet)=p(newSet)H(newSet)$$
+<a href="https://www.codecogs.com/eqnedit.php?latex=h(newSet)=p(newSet)H(newSet)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?h(newSet)=p(newSet)H(newSet)" title="h(newSet)=p(newSet)H(newSet)" /></a>
 
-$$Information Gain = H(dataSet) - h(newSet) $$
+<a href="https://www.codecogs.com/eqnedit.php?latex=Information&space;Gain&space;=&space;H(dataSet)&space;-&space;h(newSet)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Information&space;Gain&space;=&space;H(dataSet)&space;-&space;h(newSet)" title="Information Gain = H(dataSet) - h(newSet)" /></a>
 
 ---
