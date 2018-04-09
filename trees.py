@@ -92,4 +92,28 @@ def create_tree(dataset,labels):
 			(dataset,best_feature,value),sub_labels)
 	return my_tree
 
-#-------
+#use classify function.
+def classify(input_tree,feat_labels,test_vec):
+	list_str = list(input_tree.keys())
+	first_str = list_str[0]
+	second_dict = input_tree[first_str]
+	feat_index = feat_labels.index(first_str)
+	for key in second_dict.keys():
+		if test_vec[feat_index] == key:
+			if type(second_dict[key]).__name__=='dict':
+				class_label = classify(second_dict[key],feat_labels,test_vec)
+			else:
+				class_label = second_dict[key]
+	return class_label
+
+#use module pickle to save the D-T.
+def store_tree(input_tree,filename):
+	import pickle
+	fw = open(filename,'wb+')
+	pickle.dump(input_tree,fw)
+	fw.close()
+
+def grab_tree(filename):
+	import pickle
+	fr = open(filename,'rb+')
+	return pickle.load(fr)
