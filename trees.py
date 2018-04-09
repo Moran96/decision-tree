@@ -56,7 +56,7 @@ def choose_best_split(dataset):
 			new_entropy += prob * calculate_shannon_entropy(sub_data_set)
 
 			info_gain = base_entropy - new_entropy
-			print("row=",i,"value=",value,'\t',"new_entropy=",new_entropy,'\t',"info_gain=",info_gain)	
+			#print("row=",i,"value=",value,'\t',"new_entropy=",new_entropy,'\t',"info_gain=",info_gain)	
 
 			if(info_gain > best_info_gain):
 				best_info_gain = info_gain
